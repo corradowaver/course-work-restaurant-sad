@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="562.0" prefWidth="1000.0" style="-fx-background-color: rgb(252, 224, 0);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SignInController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="308.0" layoutY="128.0" prefHeight="69.0" prefWidth="237.0" text="Супер" textAlignment="CENTER" AnchorPane.topAnchor="128.0">
+         <font>
+            <Font name="Consolas Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="400.0" layoutY="223.0" prefHeight="25.0" prefWidth="200.0" promptText="юзернейм">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordField" layoutX="400.0" layoutY="256.0" prefHeight="25.0" prefWidth="200.0" promptText="пассворд">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></PasswordField>
+      <Button defaultButton="true" layoutX="455.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: white; -fx-background-radius: 15px;" text="Войти">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="signUpButton" layoutX="790.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 15px;" text="У меня нет аккаунта :c">
+         <font>
+            <Font name="Consolas Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="adminButton" layoutX="716.0" layoutY="525.0" mnemonicParsing="false" onAction="#handleAdminButton" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: white; -fx-background-radius: 15px;" text="админ">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+      <Button fx:id="clientButton" layoutX="863.0" layoutY="525.0" mnemonicParsing="false" onAction="#handleClientButton" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: white; -fx-background-radius: 15px;" text="клиент">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+      <Button fx:id="managerButton" layoutX="789.0" layoutY="525.0" mnemonicParsing="false" onAction="#handleManagerButton" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: white; -fx-background-radius: 15px;" text="менежер">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="463.0" layoutY="128.0" prefHeight="69.0" prefWidth="237.0" text="Еда" textAlignment="CENTER">
+         <font>
+            <Font name="Consolas" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="56.0" layoutX="490.0" layoutY="131.0">
+         <image>
+            <Image url="@../../../../res/704122_food_512x512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

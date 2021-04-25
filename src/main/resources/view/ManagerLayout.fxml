@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ManagerController">
+    <children>
+        <TabPane prefHeight="562.0" prefWidth="1000.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Клиенты">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="clientTable" layoutX="14.0" layoutY="14.0" prefHeight="510.0" prefWidth="570.0">
+                                    <columns>
+                                        <TableColumn fx:id="clientNameColumn" prefWidth="171.0" text="Имя" />
+                                        <TableColumn fx:id="clientAddressColumn" prefWidth="186.0" text="Адрес" />
+                                        <TableColumn fx:id="clientPhoneColumn" prefWidth="211.0" text="Телефон" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Заказы">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="orderTable" layoutX="14.0" layoutY="14.0" prefHeight="509.0" prefWidth="500.0">
+                                    <columns>
+                                        <TableColumn fx:id="orderDateColumn" prefWidth="246.0" text="Дата заказа" />
+                                        <TableColumn fx:id="orderClientPhoneColumn" prefWidth="253.0" text="Телефон клиента" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Отзывы">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="reviewTable" layoutX="14.0" layoutY="14.0" prefHeight="514.0" prefWidth="983.0">
+                                    <columns>
+                                        <TableColumn fx:id="reviewOrderIdColumn" prefWidth="57.0" text="ID" />
+                                        <TableColumn fx:id="reviewRateColumn" prefWidth="50.0" text="Оценка" />
+                                        <TableColumn fx:id="reviewTextColumn" prefWidth="248.0" text="Текст отзыва" />
+                                        <TableColumn fx:id="reviewClientsNameColumn" prefWidth="172.0" text="Имя клиента" />
+                                        <TableColumn fx:id="reviewClientPhoneColumn" prefWidth="208.0" text="Телефон клиента" />
+                                        <TableColumn fx:id="reviewClientAddressColumn" prefWidth="247.0" text="Адрес клиента" />
+
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab onSelectionChanged="#updateProfileInfo" text="Профиль">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="14.0" prefHeight="338.0" prefWidth="314.0">
+                           <children>
+                              <TextField fx:id="staffUsernameField" disable="true" promptText="юзернейм">
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Monospaced Regular" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="staffFirstNameField" disable="true" promptText="имя">
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Monospaced Regular" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="staffLastNameField" disable="true" promptText="фамилия">
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Monospaced Regular" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="staffSalaryField" disable="true" promptText="зарплата">
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Monospaced Regular" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab onSelectionChanged="#logOut" text="Выйти">
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

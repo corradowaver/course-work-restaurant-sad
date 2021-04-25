@@ -1,0 +1,46 @@
+database/CommandsHelper.java
+ database.CommandsHelper
+database/Connector.java
+ database.Connector
+view/MainApp.java
+ view.MainApp
+view/SignInController.java
+ view.SignInController
+security/PasswordEncoder.java
+ security.PasswordEncoder
+view/ClientController.java
+ view.ClientController
+model/Department.java
+ model.Department
+view/ManagerController.java
+ view.ManagerController
+model/Position.java
+ model.Position
+security/CryptoUtils.java
+ security.CryptoUtils
+database/Commands.java
+ database.Commands
+Main.java
+ Main
+database/Controller.java
+ database.Controller
+view/AdminController.java
+ view.AdminController
+model/User.java
+ model.User
+query/templates/QueryTemplates.java
+ query.templates.QueryTemplates
+view/RootController.java
+ view.RootController
+model/Client.java
+ model.Client
+model/Order.java
+ model.Order
+security/EncryptorAesGcmPassword.java
+ security.EncryptorAesGcmPassword
+view/SignUpController.java
+ view.SignUpController
+model/Review.java
+ model.Review
+model/Staff.java
+ model.Staff
